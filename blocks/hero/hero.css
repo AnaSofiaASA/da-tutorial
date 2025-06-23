@@ -6,15 +6,18 @@
 .hero {
   position: relative;
   padding: 40px 24px;
-  min-height: 300px;
+  min-height: 500px;
 }
 
 .hero h1 {
-  max-width: 1200px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  color: var(--background-color);
+  color: black;
   text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+  margin-top: 150px;
 }
 
 .hero picture {
@@ -31,8 +34,27 @@
   height: 100%;
 }
 
-@media (width >= 900px) {
+.default-content-wrapper > .button-container {
+  position: absolute;
+  display: flex;
+  top: 360px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px 24px;
+  width: 90%;
+  justify-content: center;
+
+  a {
+    background-color: black;
+    border-radius: 0;
+    min-width: 15.3125rem;
+    padding: 1.0625rem 1.6875rem 1.125rem 1.6875rem;
+    font-weight: bold;
+  }
+}
+
+/* @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
   }
-}
+} */

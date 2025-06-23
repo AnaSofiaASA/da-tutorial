@@ -52,12 +52,13 @@ main .section .teaser-row-wrapper {
     text-transform: uppercase;
     padding: 1rem;
     font-weight: bold;
-}
 
-p:first-child { 
+    div p:first-child { 
     font-size: 14px;
+    }
+
+    div p:last-child {
+        font-size: 40px;
+    }
 }
 
-p:last-child {
-    font-size: 40px;
-}
