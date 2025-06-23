@@ -16,6 +16,7 @@
       "fragment",
       "form",
       "hero",
+      "teaser-row",
       "image",
       "quote",
       "search",
@@ -35,6 +36,12 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "teaser-row",
+    "components": [
+      "teaser"
     ]
   },
   {
