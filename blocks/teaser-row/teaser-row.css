@@ -7,6 +7,7 @@ main .section .teaser-row-wrapper {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 500px;
 }
 
 .block.teaser-row > div {
@@ -15,23 +16,23 @@ main .section .teaser-row-wrapper {
     border: 1px solid #eee;
 }
 
-.block.teaser-row.fifty-fifty > div {
+.block.teaser-row > .fifty-fifty {
     width: 50%;
 }
 
-.block.teaser-row.forty-sixty > div:first-child {
+.block.teaser-row > .forty-sixty:first-child {
     width: 40%;
 }
 
-.block.teaser-row.forty-sixty > div:last-child {
+.block.teaser-row > .forty-sixty:last-child {
     width: 60%;
 }
 
-.block.teaser-row.sixty-forty > div:first-child {
+.block.teaser-row > .sixty-forty:first-child {
     width: 60%;
 }
 
-.block.teaser-row.sixty-forty > div:last-child {
+.block.teaser-row > .sixty-forty:last-child {
     width: 40%;
 }
 
@@ -39,7 +40,7 @@ main .section .teaser-row-wrapper {
     display: block;
     z-index: -1;
     width: 100%;
-    height: 15rem;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -51,4 +52,12 @@ main .section .teaser-row-wrapper {
     text-transform: uppercase;
     padding: 1rem;
     font-weight: bold;
+}
+
+p:first-child { 
+    font-size: 14px;
+}
+
+p:last-child {
+    font-size: 40px;
 }
