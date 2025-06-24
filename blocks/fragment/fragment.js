@@ -45,10 +45,8 @@ export async function loadFragment(path) {
       return main;
     }
   } catch (e) {
-    console.error(`Error loading fragment from ${fetchUrl}`, e);
+     return null;
   }
-
-  return null;
 }
 
 export default async function decorate(block) {
