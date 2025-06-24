@@ -43,8 +43,6 @@ export async function loadFragment(path) {
       decorateMain(main);
       await loadSections(main);
       return main;
-    } else {
-      console.error(`Failed to fetch fragment: ${fetchUrl}`, resp.status);
     }
   } catch (e) {
     console.error(`Error loading fragment from ${fetchUrl}`, e);
