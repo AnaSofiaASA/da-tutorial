@@ -18,13 +18,20 @@ import {
  * @returns {HTMLElement} The root element of the fragment
  */
 export async function loadFragment(path) {
-  if (path) { //  && path.startsWith('/')
-    const resp = await fetch(`${path}.plain.html`);
+  if (!path) return null;
+
+  // Check if the path is a full URL
+  const isExternal = path.startsWith('http://') || path.startsWith('https://');
+
+  // Use plain.html only for local fragments
+  const fetchUrl = isExternal ? path : `${path}.plain.html`;
+
+  try {
+    const resp = await fetch(fetchUrl);
     if (resp.ok) {
       const main = document.createElement('main');
       main.innerHTML = await resp.text();
 
-      // reset base path for media to fragment base
       const resetAttributeBase = (tag, attr) => {
         main.querySelectorAll(`${tag}[${attr}^="./media_"]`).forEach((elem) => {
           elem[attr] = new URL(elem.getAttribute(attr), new URL(path, window.location)).href;
@@ -36,8 +43,13 @@ export async function loadFragment(path) {
       decorateMain(main);
       await loadSections(main);
       return main;
+    } else {
+      console.error(`Failed to fetch fragment: ${fetchUrl}`, resp.status);
     }
+  } catch (e) {
+    console.error(`Error loading fragment from ${fetchUrl}`, e);
   }
+
   return null;
 }
 
