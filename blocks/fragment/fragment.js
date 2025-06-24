@@ -45,7 +45,7 @@ export async function loadFragment(path) {
       return main;
     }
   } catch (e) {
-    console.log(e);
+    return null;
   }
 
   return null;
