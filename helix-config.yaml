@@ -1,5 +1,0 @@
-content:
-  - name: google-drive
-    driver: google-drive
-    options:
-      folder: edge-delivery-site
