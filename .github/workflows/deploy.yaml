@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Helix CLI (v11.3.1)
-        run: npm install -g @adobe/helix-cli@11.3.1
+      - name: Install Helix CLI (v13.4.63)
+        run: npm install -g @adobe/helix-cli@13.4.63
 
       - name: Deploy to Helix
         run: |
