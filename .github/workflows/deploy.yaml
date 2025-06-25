@@ -1,25 +1,20 @@
-name: Helix Deploy
+name: Deploy Helix Site
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
 
       - name: Install Helix CLI
         run: npm install -g @adobe/helix-cli
 
-      - name: Deploy with Helix CLI
-        env:
-          HELIX_GIT_PUBLISH_FORCE: 1
-        run: hlx deploy --owner anasofiaasa --repo da-tutorial --ref main
+      - name: Deploy Site
+        run: |
+          hlx deploy
+          hlx publish
