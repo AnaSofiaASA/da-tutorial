@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 14
 
       - name: Install Helix CLI (v13.4.63)
         run: npm install -g @adobe/helix-cli@13.4.63
