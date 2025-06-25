@@ -9,11 +9,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Setup Helix CLI
-        run: npm install -g @adobe/helix-cli
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      - name: Deploy
+      - name: Install Helix CLI (v11.3.1)
+        run: npm install -g @adobe/helix-cli@11.3.1
+
+      - name: Deploy to Helix
         run: |
-          hlx up --publish
+          hlx deploy
+          hlx publish
