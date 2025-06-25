@@ -11,10 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install Helix CLI
+      - name: Setup Helix CLI
         run: npm install -g @adobe/helix-cli
 
-      - name: Deploy Site
+      - name: Deploy
         run: |
-          hlx deploy
-          hlx publish
+          hlx up --publish
