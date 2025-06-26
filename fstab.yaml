@@ -1,10 +1,12 @@
 mountpoints:
-  /: https://drive.google.com/drive/folders/1-Wv1Lm1yJ44NKey9PXKDTA5kR1EP-562?hl=pt-br
+  /:
+    url: https://drive.google.com/drive/folders/1-Wv1Lm1yJ44NKey9PXKDTA5kR1EP-562
 
 paths:
-  '/footer':
+  /footer:
     type: google-doc
-    src: 'https://docs.google.com/document/d/e/2PACX-1vTYtcJ_oJn0r4Mrg9F2R9c7kbE_76SYPo9XhfT8u99Gh2N-AFkciSo44vGJuZu1q5rCDusnUt9icf14/pub'
-  '/nav':
+    src: https://docs.google.com/document/d/e/2PACX-1vTYtcJ_oJn0r4Mrg9F2R9c7kbE_76SYPo9XhfT8u99Gh2N-AFkciSo44vGJuZu1q5rCDusnUt9icf14/pub
+
+  /nav:
     type: google-doc
-    src: 'https://docs.google.com/document/d/e/2PACX-1vSi1Jqgm_qiGUNUT7SmJS_uei1J5ykQQKKG79Q2eIBGaMOvoZ2JGQN3DamtpJ7WE-CoVBOC4NPUp3Ld/pub'
+    src: https://docs.google.com/document/d/e/2PACX-1vSi1Jqgm_qiGUNUT7SmJS_uei1J5ykQQKKG79Q2eIBGaMOvoZ2JGQN3DamtpJ7WE-CoVBOC4NPUp3Ld/pub
