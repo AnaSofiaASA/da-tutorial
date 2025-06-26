@@ -19,8 +19,3 @@ jobs:
 
       - name: Install Helix CLI (v13.4.63)
         run: npm install -g @adobe/helix-cli@13.4.63
-
-      - name: Deploy to Helix
-        run: |
-          hlx deploy
-          hlx publish
