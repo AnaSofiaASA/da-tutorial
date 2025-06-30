@@ -268,6 +268,17 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  font-size: 16px;
+  line-height: 0;
+}
+
+header nav .nav-tools .default-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-tools .default-content-wrapper p:first-child {
+  margin-right: 20px;
 }
 
 header nav .nav-tools .button {

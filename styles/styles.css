@@ -253,7 +253,27 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: black;
+  color: white;
   margin: 0;
   padding: 40px 0;
+  margin-top: 45px;
+
+  @media (width >= 900px) {
+  .columns > div {
+    align-items: flex-start;
+
+    a:any-link {
+    color: white;
+    }
+  }
+}
+
+  > ul {
+    display: flex;
+
+    > li {
+      flex: 1 1 30%;
+    }
+  }
 }

@@ -13,13 +13,31 @@ footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
+/* @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
-}
+} */
 
 .footer-wrapper {
   background-color: black;
   color: white;
+  border-top: 1px solid white;
+}
+
+.custom_footer > div > div > div > div {
+  display: flex;
+
+  > div {
+    flex: 1 1 30%;
+  }
+
+  > div:last-child {
+      text-align: right;
+  }
+}
+
+.icon {
+  vertical-align: bottom;
+  margin-left: 10px;
 }
