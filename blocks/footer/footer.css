@@ -19,3 +19,7 @@ footer .footer p {
   }
 }
 
+.footer-wrapper {
+  background-color: black;
+  color: white;
+}

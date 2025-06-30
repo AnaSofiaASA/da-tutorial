@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 500 500">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <mask id="mask" x="159.135" y="188.009" width="170.631" height="119.442" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <polygon id="path-1" points="159.135 188.009 329.767 188.009 329.767 307.451 159.135 307.451 159.135 188.009" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="Youtube_white">
+    <g id="YouTube">
+      <g mask="url(#mask)">
+        <path id="Fill-1" d="M227,272.937v-50.414l44.597,25.208-44.597,25.206ZM326.201,206.661c-1.962-7.342-7.744-13.123-15.085-15.085-13.306-3.566-66.665-3.566-66.665-3.566,0,0-53.358,0-66.665,3.566-7.341,1.962-13.123,7.744-15.085,15.085-3.566,13.306-3.566,41.07-3.566,41.07,0,0,0,27.763,3.566,41.07,1.962,7.342,7.744,13.123,15.085,15.086,13.306,3.565,66.665,3.565,66.665,3.565,0,0,53.358,0,66.665-3.565,7.341-1.963,13.123-7.744,15.085-15.086,3.566-13.307,3.566-41.07,3.566-41.07,0,0,0-27.763-3.566-41.07h0Z" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+  <text transform="translate(200.388 473.604)" font-family="AvertaPE-Light, &apos;Averta PE&apos;" font-size="25" font-weight="300"><tspan x="0" y="0">YouTube</tspan></text>
+</svg>
